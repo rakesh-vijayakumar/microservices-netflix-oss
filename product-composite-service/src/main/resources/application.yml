@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: product-composite-service
+
+server:
+  port: 9055
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9000/eureka/

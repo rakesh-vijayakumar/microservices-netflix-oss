@@ -1,0 +1,24 @@
+plugins {
+	id 'org.springframework.boot' version '1.5.9.RELEASE'
+	id 'java'
+}
+
+repositories {
+	mavenLocal()	
+	mavenCentral()
+}
+
+dependencyManagement{
+	imports { mavenBom 'org.springframework.cloud:spring-cloud-dependencies:Camden.SR6' }
+}
+
+dependencies { 
+	compile 'org.springframework.boot:spring-boot-starter-web'
+	compile 'org.springframework.cloud:spring-cloud-starter-eureka'
+	
+}
+
+jar {
+    baseName = 'product-service'
+    version = '0.0.1-SNAPSHOT'
+}

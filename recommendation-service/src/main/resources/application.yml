@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: recommendation-service
+
+server:
+  port: 9057
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9000/eureka/
